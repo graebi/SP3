@@ -26,6 +26,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+@SuppressWarnings("ALL")
 public class Fragment1 extends Fragment {
 
     //Variable declaration
@@ -64,6 +65,7 @@ public class Fragment1 extends Fragment {
         oslist = new ArrayList<>();
         new JSONParse().execute();
 
+        
         buttonGet = (Button)getView().findViewById(R.id.buttonGet);
         buttonGet.setOnClickListener(new View.OnClickListener() {
             @Override
