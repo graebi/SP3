@@ -7,11 +7,11 @@ import android.content.SharedPreferences;
  * Created by Thorsten on 04/10/2015.
  * This class stores user data into a file locally
  */
-public class UserLocalStore {
+class UserLocalStore {
 
     //Static variable for holding user data
-    public static final String SP_NAME = "userDetails";
-    SharedPreferences userLocalDatabase; //allows to store data on the phone
+    private static final String SP_NAME = "userDetails";
+    private final SharedPreferences userLocalDatabase; //allows to store data on the phone
 
     //Constructor
     //Get context of current state of the SP_NAME file which stores the user details

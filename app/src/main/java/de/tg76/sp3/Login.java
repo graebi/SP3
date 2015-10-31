@@ -18,11 +18,12 @@ import android.widget.TextView;
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
     //Variable to hold value from activity_login.xml form
-    Button bLogin;
-    EditText etUsername, etPassword;
-    TextView tvRegisterLink;
+    private Button bLogin;
+    private EditText etUsername;
+    private EditText etPassword;
+    private TextView tvRegisterLink;
 
-    UserLocalStore userLocalStore;
+    private UserLocalStore userLocalStore;
 
 
     @Override

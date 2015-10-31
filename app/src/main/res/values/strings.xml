@@ -2,7 +2,6 @@
     <string name="app_name" translatable="false">SP3</string>
 
     <string name="action_settings" translatable="false">Settings</string>
-    <string name="hello_world" translatable="false">hw</string>
     <string name="title_activity_login" translatable="false">Login</string>
     <string name="title_activity_register" translatable="false">Register</string>
     <string name="title_activity_smart_parking" translatable="false">SmartParking</string>
