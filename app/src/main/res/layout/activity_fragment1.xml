@@ -15,11 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Get Data"
-        android:id="@+id/buttonGet" />
+        android:id="@+id/buttonGet"
+        android:layout_centerHorizontal="true" />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/list" />
+        android:id="@+id/list"
+        android:layout_below="@+id/buttonGet"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
