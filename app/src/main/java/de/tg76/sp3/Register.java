@@ -15,8 +15,11 @@ import android.widget.EditText;
 public class Register extends AppCompatActivity implements View.OnClickListener{
 
     //Variable to hold value from activity_register.xml form
-    EditText etName, etEmail, etUsername,etPassword;
-    Button bRegister;
+    private EditText etName;
+    private EditText etEmail;
+    private EditText etUsername;
+    private EditText etPassword;
+    private Button bRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

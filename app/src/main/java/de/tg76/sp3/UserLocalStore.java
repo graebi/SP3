@@ -7,11 +7,11 @@ import android.content.SharedPreferences;
  * Created by Thorsten on 04/10/2015.
  * This class stores user data into a file locally
  */
-public class UserLocalStore {
+class UserLocalStore {
 
     //Static variable for holding user data
-    public static final String SP_NAME = "userDetails";
-    SharedPreferences userLocalDatabase; //allows to store data on the phone
+    private static final String SP_NAME = "userDetails";
+    private final SharedPreferences userLocalDatabase; //allows to store data on the phone
 
     //Constructor
     //Get context of current state of the SP_NAME file which stores the user details
@@ -26,7 +26,7 @@ public class UserLocalStore {
         spEditor.putString("email",user.email);
         spEditor.putString("username",user.username);
         spEditor.putString("password",user.password);
-        spEditor.commit();
+        spEditor.apply();
     }
 
     //Function retrieving attributes of user which is stored on the local database
@@ -44,7 +44,7 @@ public class UserLocalStore {
     public void setUserLoggedIn(boolean loggedIn){
         SharedPreferences.Editor spEditor = userLocalDatabase.edit();
         spEditor.putBoolean("loggedIn",loggedIn);
-        spEditor.commit();
+        spEditor.apply();
     }
 
     //Function if user is logged in or out to application
@@ -56,7 +56,7 @@ public class UserLocalStore {
     public void clearUserData(){
         SharedPreferences.Editor spEditor = userLocalDatabase.edit();
         spEditor.clear();
-        spEditor.commit();
+        spEditor.apply();
     }
 
 }

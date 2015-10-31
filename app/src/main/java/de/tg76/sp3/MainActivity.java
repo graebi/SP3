@@ -10,9 +10,11 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     //Variable to hold values from activity form
-    EditText etName, etEmail, etUsername;
-    Button bLogout;
-    UserLocalStore userLocalStore;
+    private EditText etName;
+    private EditText etEmail;
+    private EditText etUsername;
+    private Button bLogout;
+    private UserLocalStore userLocalStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 userLocalStore.clearUserData();
                 userLocalStore.setUserLoggedIn(false);
 
-                //Origninal - changed 19/10
+                //Original - changed 19/10
                 //startActivity(new Intent(this,Login.class));
                 //break;
 

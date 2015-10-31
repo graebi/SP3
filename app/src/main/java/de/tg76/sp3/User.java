@@ -6,7 +6,10 @@ package de.tg76.sp3;
 public class User {
 
     //Variable to hold value of user
-    String name, username, password, email;
+    final String name;
+    final String username;
+    final String password;
+    final String email;
 
     //Constructor when user register
     public User (String name, String email,String username, String password){

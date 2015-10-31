@@ -23,13 +23,13 @@ import java.util.ArrayList;
 /**
  * Class is used to push and retrieve data from and to DB
  */
-public class ServerRequests {
+class ServerRequests {
 
     //Show loading bar when server request is executed
-    ProgressDialog progressDialog;
+    private final ProgressDialog progressDialog;
     //Connection time in mill sec before disconnect
-    public static final int CONNECTION_TIME = 1000*15;
-    public static final String SERVER_ADDRESS = "http://ec2-52-17-188-91.eu-west-1.compute.amazonaws.com/";
+    private static final int CONNECTION_TIME = 1000*15;
+    private static final String SERVER_ADDRESS = "http://ec2-52-17-188-91.eu-west-1.compute.amazonaws.com/";
 
     //Constructor
     public ServerRequests(Context context){
@@ -61,9 +61,9 @@ public class ServerRequests {
     public class StoreUserDataAsyncTask extends AsyncTask<Void,Void, Void> {
 
         //Holds user data
-        User user;
+        final User user;
         //Interface GetUserCallback - inform when finishing background task
-        GetUserCallback userCallback;
+        final GetUserCallback userCallback;
 
         //Constructor
         public StoreUserDataAsyncTask(User user, GetUserCallback userCallback){
@@ -113,9 +113,9 @@ public class ServerRequests {
     //Returns a user in AsyncTask
     public class fetchUserDataAsyncTask extends AsyncTask<Void,Void, User> {
         //Holds user data
-        User user;
+        final User user;
         //Interface GetUserCallback
-        GetUserCallback userCallback;
+        final GetUserCallback userCallback;
 
         //Constructor
         public fetchUserDataAsyncTask(User user, GetUserCallback userCallback) {
