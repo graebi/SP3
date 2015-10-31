@@ -1,8 +1,5 @@
 package de.tg76.sp3;
 
-/**
- * Created by adm_toto on 18/10/2015.
- */
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -20,14 +17,15 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                Fragment1 tab1 = new Fragment1();
-                return tab1;
+                return new Fragment1();
             case 1:
-                Fragment2 tab2 = new Fragment2();
-                return tab2;
+                return new Fragment2();
             case 2:
-                Fragment3 tab3 = new Fragment3();
-                return tab3;
+                return new Fragment3();
+            case 3:
+                return new Fragment4();
+            case 4:
+                return new Fragment1();
             default:
                 return null;
         }

@@ -7,10 +7,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="de.tg76.sp2.Fragment2">
+    tools:context="de.tg76.smartparking.Fragment2">
+
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Fragment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

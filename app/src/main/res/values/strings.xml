@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">SP3</string>
+    <string name="app_name" translatable="false">SP3</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">hw</string>
-    <string name="title_activity_login">Login</string>
-    <string name="title_activity_register">Register</string>
-    <string name="title_activity_fragment1">Fragment1</string>
-    <string name="title_activity_tab_fragment">TabFragment</string>
-    <string name="title_activity_smart_parking">SmartParking</string>
-    <string name="title_activity_fragment2">Fragment2</string>
-    <string name="title_activity_fragment3">Fragment3</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">hw</string>
+    <string name="title_activity_login" translatable="false">Login</string>
+    <string name="title_activity_register" translatable="false">Register</string>
+    <string name="title_activity_smart_parking" translatable="false">SmartParking</string>
+    <string name="title_activity_fragment1" translatable="false">Fragment1</string>
+    <string name="title_activity_fragment2" translatable="false">Fragment2</string>
+    <string name="title_activity_fragment3" translatable="false">Fragment3</string>
+    <string name="title_activity_fragment4" translatable="false">Fragment3</string>
 </resources>

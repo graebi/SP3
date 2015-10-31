@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.tg76.sp3" >
-
     //Permission to allow access to internet
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -42,6 +41,10 @@
         <activity
             android:name=".Fragment3"
             android:label="@string/title_activity_fragment3" >
+        </activity>
+        <activity
+            android:name=".Fragment4"
+            android:label="@string/title_activity_fragment4" >
         </activity>
     </application>
 
