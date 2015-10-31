@@ -26,7 +26,7 @@ public class UserLocalStore {
         spEditor.putString("email",user.email);
         spEditor.putString("username",user.username);
         spEditor.putString("password",user.password);
-        spEditor.commit();
+        spEditor.apply();
     }
 
     //Function retrieving attributes of user which is stored on the local database
@@ -44,7 +44,7 @@ public class UserLocalStore {
     public void setUserLoggedIn(boolean loggedIn){
         SharedPreferences.Editor spEditor = userLocalDatabase.edit();
         spEditor.putBoolean("loggedIn",loggedIn);
-        spEditor.commit();
+        spEditor.apply();
     }
 
     //Function if user is logged in or out to application
@@ -56,7 +56,7 @@ public class UserLocalStore {
     public void clearUserData(){
         SharedPreferences.Editor spEditor = userLocalDatabase.edit();
         spEditor.clear();
-        spEditor.commit();
+        spEditor.apply();
     }
 
 }
